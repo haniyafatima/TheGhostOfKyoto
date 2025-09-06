@@ -1,0 +1,832 @@
+html{
+scroll-behavior: smooth;
+}
+
+/* Hover effect on btns and links */
+a,
+button,
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+button:hover,
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+/* HEADER FONT */
+h1, h2 {
+  font-family: 'Michroma', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* SUBHEADER FONT */
+h3, h4 {
+  font-family: 'Abel', sans-serif;
+  font-weight: 400;
+}
+
+/* SMALL CONTENT FONT */
+body, p, a, li, span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+/* Navbar */
+.navbar {
+  padding: 20px 40px;
+}
+
+/* Center the nav links */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  width: 100%;
+}
+
+.nav-link {
+  color: #191717 !important; 
+  font-size: 0.90rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link.active { 
+  color: #555 !important;
+}
+
+.navbar-brand {
+  font-family: 'Michroma', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.9rem;
+  color: #191717 !important;
+  font-weight: bold;
+}
+
+/* ABOUT PAGE */
+.about-section {
+  background-color: #f9f9f9;
+
+}
+
+.about-heading {
+font-size: 32px;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.about-quote {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2rem;
+  color: #C7C8CC;
+  font-style: italic;
+}
+
+.about-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #191717;
+}
+
+/* Quote Styling */
+.quote-text {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #7c7c7c;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Instagram connect section */
+.connect-section {
+  background-color: #f3f1ee;
+  border-top: 1px solid #ddd;
+}
+
+.connect-text {
+  font-family: 'Michroma', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: #191717;
+}
+
+/* Footer */
+/* Footer styling */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.footer-noelani {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+}
+
+.footer-left {
+  color: #555;
+}
+
+.footer-instagram i {
+  font-size: 1.2rem;
+  color: #222;
+  transition: color 0.3s;
+}
+
+.footer-instagram i:hover {
+  color: #CFC8A0;
+}
+
+.footer-arrow a {
+  color: #888;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-arrow a:hover {
+  color: #191717;
+}
+
+/* Contact Page */
+.contact-section {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.contact-image-wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.contact-image-wrapper img {
+  object-fit: cover;
+  height: 100%;
+  filter: grayscale(20%) brightness(85%);
+}
+
+.contact-form-wrapper {
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-heading {
+font-size: 32px;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-subheading {
+  font-family: 'Abel', sans-serif;
+  color: #666;
+  font-size: 1rem;
+}
+
+.contact-form .form-control {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-form button {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+}
+
+/* Home Page */
+/* Hero Section Styling */
+.hero-collage {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-bg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-bg img {
+  width: 33.33%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin: 10px 0 20px;
+}
+
+.hero-text .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+
+/* Trial 1 */
+/* .home-hero {
+  height: 100vh;
+  background-image: url('../images/TheGhostOfKyoto-LANDSCAPE.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.home-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-family: 'Michroma', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2rem;
+  color: #ddd;
+} */
+
+/* Short About Preview */
+.about-preview {
+  background-color: #f9f9f9;
+  padding: 45px 0;
+}
+
+.about-text .subtext {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  font-style: italic;
+}
+
+.about-text .main-heading {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.about-text .description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.section-heading{
+  font-size: 32px;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+  padding: 20px 40px;
+}
+
+/* Center the nav links */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  width: 100%;
+}
+
+.nav-link {
+  color: #191717 !important; 
+  font-size: 0.90rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link.active { 
+  color: #555 !important;
+}
+
+.navbar-brand {
+  font-family: 'Michroma', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #191717 !important;
+  font-weight: bold;
+}/* Navbar */
+.navbar {
+  padding: 20px 40px;
+}
+
+/* Center the nav links */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  width: 100%;
+}
+
+.nav-link {
+  color: #191717 !important; 
+  font-size: 0.90rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link.active { 
+  color: #555 !important;
+}
+
+.navbar-brand {
+  font-family: 'Michroma', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #191717 !important;
+  font-weight: bold;
+}/* Navbar */
+.navbar {
+  padding: 20px 40px;
+}
+
+/* Center the nav links */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  width: 100%;
+}
+
+.nav-link {
+  color: #191717 !important; 
+  font-size: 0.90rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link.active { 
+  color: #555 !important;
+}
+
+.navbar-brand {
+  font-family: 'Michroma', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #191717 !important;
+  font-weight: bold;
+}/* Navbar */
+.navbar {
+  padding: 20px 40px;
+}
+
+/* Center the nav links */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  width: 100%;
+}
+
+.nav-link {
+  color: #191717 !important; 
+  font-size: 0.90rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link.active { 
+  color: #555 !important;
+}
+
+.navbar-brand {
+  font-family: 'Michroma', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #191717 !important;
+  font-weight: bold;
+}/* Navbar */
+.navbar {
+  padding: 20px 40px;
+}
+
+/* Center the nav links */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  width: 100%;
+}
+
+.nav-link {
+  color: #191717 !important; 
+  font-size: 0.90rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link.active { 
+  color: #555 !important;
+}
+
+.navbar-brand {
+  font-family: 'Michroma', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #191717 !important;
+  font-weight: bold;
+}/* Navbar */
+.navbar {
+  padding: 20px 40px;
+}
+
+/* Center the nav links */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  width: 100%;
+}
+
+.nav-link {
+  color: #191717 !important; 
+  font-size: 0.90rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link.active { 
+  color: #555 !important;
+}
+
+.navbar-brand {
+  font-family: 'Michroma', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #191717 !important;
+  font-weight: bold;
+}
+
+/* Portfolio Preview */
+.home-gallery {
+  background-color: #fff;
+}
+
+.home-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: auto;
+  transition: transform 0.3s ease;
+}
+
+.home-gallery img:hover {
+  transform: scale(1.02);
+}
+
+/* Testimonial Section */
+
+.carousel-item {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Testimonial Section */
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonial-heading{
+margin-bottom: 60px;
+}
+
+.testimonial-container {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 250px; /* FIXED height */
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.testimonial-slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #333;
+  padding: 0 30px;
+}
+
+.testimonial-author {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* CTA */
+.cta-section {
+  height: 70vh;
+  background-image: url('../images/TheGhostOfKyoto-LANDSCAPE.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixed = parallax feel */
+  position: relative;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.cta-heading {
+  font-family: 'Michroma', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Instagram Preview CTA */
+.insta-preview {
+  background-color: #f8f9fa;
+}
+
+.insta-preview img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+/* Book Now CTA */
+.location-cta {
+  background-image: url('../images/Booking-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Gallery Page Styles */
+.gallery-section {
+  background-color: #f9f9f9;
+}
+
+.gallery-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #2C2C2C;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.gallery-item img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item::after {
+  content: "View";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 8px 20px;
+  opacity: 0;
+  transition: 0.3s ease;
+  border-radius: 20px;
+}
+
+/* Control bigger view */
+.sl-close, .sl-navigation {
+  display: block !important;
+  opacity: 1 !important;
+  color: #fff !important; /* white for visibility */
+  font-size: 24px;
+  z-index: 9999;
+}
+
+.sl-prev, .sl-next {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+/* .gallery-item:hover::after {
+  opacity: 1;
+} */
+
+
+/* Hero Section Mobile responsiveness */
+/*  Navbar Mobile responsiveness */
+/* Adjust padding on small screens */
+@media (max-width: 768px) {
+
+ .hero-bg {
+    flex-direction: column;
+  }
+
+  .hero-bg img {
+    width: 100%;
+    height: 33.33%;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar-brand {
+    font-size: 0.8rem;
+    max-width: 70%;
+  }
+
+  .navbar-toggler {
+    padding: 5px 8px;
+    border: none; /* removes ugly border */
+  outline: none !important; /* removes blue outline */
+  box-shadow: none !important; /* also removes shadow border */
+  margin-left: auto;
+  }
+}
+
+
+/* Center nav links inside collapsed menu */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+    background-color: #fff; /* optional: light background */
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  }
+
+  .navbar-collapse.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; /* Optional: gives chic look */
+  transition: color 0.2s ease;  
+}
+
+.nav-link:hover {
+  color: #555;
+}
+
+.about-preview {
+    padding: 30px 20px;
+  }
+
+  .about-img,
+  .about-text {
+    width: 100% !important;
+    max-width: 100%;
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .about-text .main-heading {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .about-text .description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .about-text .btn {
+    margin-top: 20px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .about-img img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+
+  
+}
